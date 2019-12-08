@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin页面</title>
+    <link rel="stylesheet" href="static/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Admin页面</h3>
+        </div>
+    </div>
+    <h3>
+        <p>欢迎[<span color="red" th:text="${user}">用户名</span>]访问Admin页面！
+            您的权限是：<span color="red" th:text="${role}">权限</span></p>
+        <p><a href="dba">访问dba页面</a></p>
+        <p><a href="logout">安全退出</a></p>
+    </h3>
+</body>
+</html>
